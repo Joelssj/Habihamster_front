@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Rosarivo&family=Rubik:wght@300&display=swap');
+
+
+.BodyRecuperarContraseña {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/RecuperarContraseñaFondo.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 1366px;
+    height: 656px;
+    flex-shrink: 0;
+}  
+
+/* Zona del diseño del formulario */
+.PadreRecuperarContraseña {
+    width: 430px;
+    height: 600px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: rgba(213, 167, 113, 0.43);
+    box-shadow: 10px 19px 30px 0px rgba(0, 0, 0, 0.29);
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    left: 170px;
+}
+
+.FormRecuperarContraseña {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Diseño del titulo del formulario */
+.TituloFormRecuperarContraseña {
+    color: black;
+    font-family: 'Rosarivo', cursive;
+    color: #333;
+    text-align: center;
+    font-family: Rosarivo;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 35px;
+}
+
+/*Diseño del titulo correo del formulario*/
+.CorreoRecuperarContraseña{
+    color: black;
+    font-family: 'Rosarivo', cursive;
+    color: #333;
+    text-align: left;
+    font-family: Rosarivo;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 80px;
+    margin-left: 65px;
+}
+
+.InputemailandpasswordRecuperar{
+    width: 55%;
+    align-self: center;
+    margin-top: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2.5px solid #FFB800;
+    color: rgba(0, 0, 0, 0.45);
+    text-align: left;
+    font-family: Rosarivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 75px;
+    outline: none;
+}
+
+input:focus.Inputemailandpassword {
+  font-size: 16px; /* Tamaño de fuente al escribir, puedes ajustarlo según tus preferencias */
+}
+
+
+/*Diseño del titulo contraseña del formulario*/
+
+.ContraseñaRecuperarContraseña{
+    color: black;
+    font-family: 'Rosarivo', cursive;
+    color: #333;
+    text-align: left;
+    font-family: Rosarivo;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5px;
+    margin-left: 65px;
+}
+
+/*Diseño de la linea del formulario del login*/
+.RecuperarContraseñalinea{
+    width: 300px;
+    height: 2px;
+    padding-left: 60px;
+    padding-top: 8px;
+}
+
+.ButtonRecuperarContraseña {
+    width: 194px;
+    height: 42px;
+    border-radius: 30px;
+    margin-top: 60px;
+    margin-left: 120px;
+    border: none;
+    border-radius: 17px;
+    background: rgba(213, 167, 113, 0.50);
+    box-shadow: 3px 4px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.LoginParteBaja{
+    color: #333;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.57);
+    font-family: Rosarivo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 7px;
+}
+
+.ButtonLoginParteBaja{
+    width: 194px;
+    height: 42px;
+    border-radius: 30px;
+    background: none;
+    margin-top: -10px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    border: none;
+}

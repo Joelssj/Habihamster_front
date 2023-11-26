@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Rosarivo&family=Rubik:wght@300&display=swap');
+
+
+.BodyLogin {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/LoginFondo.svg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    width: 1366px;
+    height: 656px;
+    flex-shrink: 0;
+}  
+
+/* Zona del diseño del formulario */
+.PadreLogin {
+    width: 430px;
+    height: 600px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: rgba(245, 245, 245, 0.53);
+    box-shadow: 10px 19px 30px 0px rgba(0, 0, 0, 0.29);
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    left: 170px;
+}
+
+.FormLogin {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Diseño del titulo del formulario */
+.TituloFormLogin {
+    color: black;
+    font-family: 'Rosarivo', cursive;
+    color: #333;
+    text-align: center;
+    font-family: Rosarivo;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 25px;
+}
+
+/*Diseño del titulo correo del formulario*/
+.Correo{
+    color: black;
+    font-family: 'Rosarivo', cursive;
+    color: #333;
+    text-align: left;
+    font-family: Rosarivo;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 70px;
+    margin-left: 65px;
+}
+
+.Inputemailandpassword{
+    width: 55%;
+    align-self: center;
+    margin-top: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2.5px solid #C7936A;
+    color: rgba(0, 0, 0, 0.45);
+    text-align: left;
+    font-family: Rosarivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 75px;
+    outline: none;
+}
+
+input:focus.Inputemailandpassword {
+  font-size: 16px; /* Tamaño de fuente al escribir, puedes ajustarlo según tus preferencias */
+}
+
+
+/*Diseño del titulo contraseña del formulario*/
+
+.Contraseña{
+    color: black;
+    font-family: 'Rosarivo', cursive;
+    color: #333;
+    text-align: left;
+    font-family: Rosarivo;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 55px;
+    margin-left: 65px;
+}
+
+/*Diseño de la linea del formulario del login*/
+.Loginlinea{
+    width: 300px;
+    height: 2px;
+    padding-left: 60px;
+    padding-top: 8px;
+}
+
+.ButtonLogin {
+    width: 194px;
+    height: 42px;
+    border-radius: 30px;
+    background: #FFE186;
+    margin-top: 40px;
+    margin-left: 120px;
+    border: none;
+}
+
+.LoginParteBaja{
+    color: #333;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.57);
+    font-family: Rosarivo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 7px;
+}
+
+.ButtonLoginParteBaja{
+    width: 194px;
+    height: 42px;
+    border-radius: 30px;
+    background: none;
+    margin-top: -10px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    border: none;
+}
