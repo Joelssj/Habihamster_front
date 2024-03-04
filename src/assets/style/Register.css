@@ -11,14 +11,50 @@
     color: white;
     font-family: Arial, sans-serif;
     width: 1366px;
-    height: 656px;
+    height: 634px;
     flex-shrink: 0;
 }  
+
+.NombreRegister{
+    color: black;
+    font-family: 'Rosarivo', cursive;
+    color: #333;
+    text-align: left;
+    font-family: Rosarivo;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+    margin-left: 65px;
+}
+
+.Inputname{
+    width: 55%;
+    align-self: center;
+    margin-top: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2.5px solid #FFE186;;
+    color: rgba(0, 0, 0, 0.45);
+    text-align: left;
+    font-family: Rosarivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 75px;
+    outline: none;
+}
+
+input:focus.Inputname {
+  font-size: 16px; /* Tamaño de fuente al escribir, puedes ajustarlo según tus preferencias */
+}
 
 /* Zona del diseño del formulario */
 .PadreRegister {
     width: 430px;
-    height: 600px;
+    height: 620px;
     flex-shrink: 0;
     border-radius: 15px;
     background: rgba(245, 245, 245, 0.53);
@@ -60,7 +96,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 80px;
+    margin-top: 2%;
     margin-left: 65px;
 }
 
@@ -114,7 +150,7 @@ input:focus.Inputemailandpassword {
 .ButtonRegister {
     width: 194px;
     height: 42px;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 120px;
     border: none;
     border-radius: 17px;

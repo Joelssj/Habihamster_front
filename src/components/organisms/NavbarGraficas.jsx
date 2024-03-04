@@ -34,7 +34,6 @@ function NavbarGraficas() {
               <img className={"Comida"} src={Img.ComidaImagen} />
               <Title msn={"Rellenado"} className={"ComidaText"}></Title>
               <img className={"Linea1"} src={Img.LineaParaCuadros} />
-              <Title msn={"3/veces"} className={"ComidaText2"}></Title>
             </div>
           </li>
           <li>
@@ -42,7 +41,6 @@ function NavbarGraficas() {
               <img className={"Temperatura"} src={Img.TemperaturaImagen} />
               <Title msn={"Temperatura"} className={"TemperaturaText"}></Title>
               <img className={"Linea2"} src={Img.LineaParaCuadros} />
-              <Title msn={"22°C"} className={"TemperaturaText2"}></Title>
             </div>
           </li>
           <li>
@@ -50,7 +48,6 @@ function NavbarGraficas() {
               <img className={"Humedad"} src={Img.HumedadImagen} />
               <Title msn={"Humedad"} className={"HumedadText"}></Title>
               <img className={"Linea3"} src={Img.LineaParaCuadros} />
-              <Title msn={"54%"} className={"HumedadText2"}></Title>
             </div>
           </li>
           <li>
@@ -58,7 +55,6 @@ function NavbarGraficas() {
               <img className={"Luminosidad"} src={Img.LuminosidadImagen} />
               <Title msn={"Luminosidad"} className={"LuminosidadText"}></Title>
               <img className={"Linea4"} src={Img.LineaParaCuadros} />
-              <Title msn={"54"} className={"LuminosidadText2"}></Title>
             </div>
           </li>
         </ul>

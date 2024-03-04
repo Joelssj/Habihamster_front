@@ -128,8 +128,8 @@ div.nadvarpadre {
     width: 50px;
     position: absolute;
     z-index: 1;
-    top: 8px;
-    left: 130px;
+    top: 25px;
+    left: 145px;
 }
 
 
@@ -148,7 +148,7 @@ div.nadvarpadre {
     left: 140px;
 }
 
-.Linea1{
+.Linea1 {
     width: 2px;
     position: absolute;
     z-index: 1;
@@ -177,8 +177,8 @@ div.nadvarpadre {
     width: 50px;
     position: absolute;
     z-index: 1;
-    top: 8px;
-    left: 380px;
+    top: 25px;
+    left: 400px;
 }
 
 
@@ -197,12 +197,44 @@ div.nadvarpadre {
     left: 415px;
 }
 
-.Linea2{
+.Linea2 {
     width: 2px;
     position: absolute;
     z-index: 1;
     top: 5px;
     left: 365px;
+}
+
+/* Temperatura Apartado Probabilidad */
+
+.TemperaturaTextProbabilidad {
+    color: #000;
+    text-align: center;
+    font-family: Slabo 27px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 375px;
+}
+
+
+.TemperaturaText2 {
+    color: #000;
+    text-align: center;
+    font-family: Slabo 27px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: 415px;
 }
 
 
@@ -227,8 +259,22 @@ div.nadvarpadre {
     width: 50px;
     position: absolute;
     z-index: 1;
+    top: 25px;
+    left: 675px;
+}
+
+.HumedadTextProbabilidad {
+    color: #000;
+    text-align: center;
+    font-family: Slabo 27px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    z-index: 1;
     top: 8px;
-    left: 660px;
+    left: 650px;
 }
 
 
@@ -247,7 +293,7 @@ div.nadvarpadre {
     left: 685px;
 }
 
-.Linea3{
+.Linea3 {
     width: 2px;
     position: absolute;
     z-index: 1;
@@ -276,8 +322,8 @@ div.nadvarpadre {
     width: 50px;
     position: absolute;
     z-index: 1;
-    top: 8px;
-    left: 905px;
+    top: 25px;
+    left: 920px;
 }
 
 
@@ -296,7 +342,7 @@ div.nadvarpadre {
     left: 935px;
 }
 
-.Linea4{
+.Linea4 {
     width: 2px;
     position: absolute;
     z-index: 1;
@@ -304,3 +350,95 @@ div.nadvarpadre {
     left: 890px;
 }
 
+/* Apartado de luminosidad en probabilidad */
+
+
+.LuminosidadProbabilidad {
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 13px;
+    left: 50px;
+}
+
+.LuminosidadPText {
+    color: #000;
+    text-align: center;
+    font-family: Slabo 27px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: 135px;
+}
+
+.LuminosidadProb {
+    color: #000;
+    text-align: center;
+    font-family: Slabo 27px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: 116px;
+}
+
+.LuminosidadPText2 {
+    color: #000;
+    text-align: center;
+    font-family: Slabo 27px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: 155px;
+}
+
+.Linea5 {
+    width: 2px;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 113px;
+}
+
+.TemperaturaText3{
+    color: #000;
+    text-align: center;
+    font-family: Slabo 27px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 395px;
+}
+
+.HumedadText3{
+    color: #000;
+    text-align: center;
+    font-family: Slabo 27px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 675px;
+}

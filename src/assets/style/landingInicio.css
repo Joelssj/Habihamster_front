@@ -147,7 +147,7 @@ div .Hijo2LandingInfo {
     position: absolute;
     z-index: 1;
     top: 700px;
-    left: 4px;
+    left: -4.5px;
 }
 
 /* Ajuste del texto del contenido del div 1 */

@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React, { useState, useEffect } from "react";
 import {
   LineChart,
   Line,
@@ -9,103 +9,54 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-
 import "../../assets/style/Graficas.css";
 import Title from "../atoms/Title";
 import Img from "../../assets/js/img";
 import NavbarGraficas from "./NavbarGraficas";
 
-const data = [
-  {
-    name: "02:00",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: "04:00",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: "06:00",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    name: "08:00",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: "10:00",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: "12:00",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "14:00",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-  {
-    name: "16:00",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-  {
-    name: "18:00",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-  {
-    name: "20:00",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-  {
-    name: "22:00",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-  {
-    name: "24:00",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-];
-
 function redirigir1() {
-  // Puedes cambiar la URL a la que quieras redirigir
   window.location.href = "Graficas";
 }
 
 function redirigir2() {
-  // Puedes cambiar la URL a la que quieras redirigir
   window.location.href = "Estadisticas";
 }
 
 function redirigir3() {
-  // Puedes cambiar la URL a la que quieras redirigir
   window.location.href = "/";
 }
 
 function FormGraficasTemperatura() {
+
+//-----------------------------------------------------------------------------
+  //!Inicia proceso de impresion
+
+  const [chartData, setChartData] = useState([]);  //!Estado que es un arreglo donde se guarda lo que viene de la API
+
+  //?Aca es el effect que hace la peticion a la API
+  useEffect(() => {
+    fetch('http://localhost:3010/sensores')
+      .then(response => response.json())
+      .then(data => {
+        // Obtener todas las temperaturas del array "data"
+        const temperatures = data.data.map(item => ({ name: item.hora, pv: item.temperatura }));
+
+        // Ordenar los datos por la hora en orden ascendente
+        temperatures.sort((a, b) => {
+          // Parsear las horas y compararlas
+          const timeA = new Date(`2000-01-01T${a.name}`);
+          const timeB = new Date(`2000-01-01T${b.name}`);
+          return timeA - timeB;
+        });
+
+        // Actualizar el estado con las nuevas temperaturas ordenadas
+        setChartData(temperatures);
+      })
+      .catch(error => console.error('Error al obtener datos:', error));
+  }, []); 
+  //-------------------------------------------------------------
+
+
   return (
     <>
       <div className="padre">
@@ -113,15 +64,15 @@ function FormGraficasTemperatura() {
           <Title msn={"Panel de control"} className={"TituloPanel"}></Title>
           <img className={"GraficaLinea"} src={Img.LineaGrafica} />
 
-          <button onClick={redirigir1} class="button-graficas">
+          <button onClick={redirigir1} className="button-graficas">
             <img src="src/assets/img/Performance Macbook.png" alt=""></img>
             Gráficas
           </button>
-          <button onClick={redirigir2} class="button-estadisticas">
+          <button onClick={redirigir2} className="button-estadisticas">
             <img src="src/assets/img/estadisticas.png" alt=""></img>
             Estadísticas
           </button>
-          <button onClick={redirigir3} class="button-logout">
+          <button onClick={redirigir3} className="button-logout">
             <img src="src/assets/img/Sign Out.png" alt=""></img>
             Cerrar Sesión
           </button>
@@ -135,7 +86,7 @@ function FormGraficasTemperatura() {
               <LineChart
                 width={500}
                 height={300}
-                data={data}
+                data={chartData}
                 margin={{
                   top: 5,
                   right: 30,
@@ -145,7 +96,7 @@ function FormGraficasTemperatura() {
               >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
-                <YAxis />
+                <YAxis domain={[16, 36]} ticks={[16, 20, 24, 28, 32, 36]} />
                 <Tooltip />
                 <Legend />
                 <Line
@@ -154,7 +105,6 @@ function FormGraficasTemperatura() {
                   stroke="#FF2E00"
                   activeDot={{ r: 8 }}
                 />
-                {/* <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}
               </LineChart>
             </ResponsiveContainer>
           </div>

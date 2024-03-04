@@ -1,4 +1,21 @@
 import React, { PureComponent } from "react";
+import "../../assets/style/navbarGraficas.css";
+
+function redirigirTemperatura() {
+  // Puedes cambiar la URL a la que quieras redirigir
+  window.location.href = "GraficaTemperatura";
+}
+
+function redirigirHumedad() {
+  // Puedes cambiar la URL a la que quieras redirigir
+  window.location.href = "GraficaHumedad";
+}
+
+function redirigirLuminosidad() {
+  // Puedes cambiar la URL a la que quieras redirigir
+  window.location.href = "GraficaLuminosidad";
+}
+
 import {
   LineChart,
   Line,
@@ -13,6 +30,8 @@ import {
 import "../../assets/style/Graficas.css";
 import Title from "../atoms/Title";
 import Img from "../../assets/js/img";
+import NavbarEstadisticasProbabilidad from "./NavbarEstadisticasProbabilidad";
+import NavbarEstadisticasMedia from "./NavbarEstadisticasMedia";
 
 const data = [
   {
@@ -126,42 +145,10 @@ function FormEstadisticas() {
           </button>
         </div>
         <div className="divderecho">
-          <Title msn={"Media de los datos"} className={"TituloMedia"}></Title>
-          <table border="1">
-            <tr>
-              <th>Tipo de dato</th>
-              <th>Fecha</th>
-              <th>Media</th>
-            </tr>
-            <tr>
-              <td>Dato 1</td>
-              <td>Dato 2</td>
-              <td>Dato 3</td>
-            </tr>
-            <tr>
-              <td>Dato 4</td>
-              <td>Dato 5</td>
-              <td>Dato 6</td>
-            </tr>
-          </table>
-          <Title msn={"Probabilidades de los datos"} className={"TituloMedia"}></Title>
-          <table border="1">
-            <tr>
-              <th>Tipo de dato</th>
-              <th>Fecha</th>
-              <th>Media</th>
-            </tr>
-            <tr>
-              <td>Dato 1</td>
-              <td>Dato 2</td>
-              <td>Dato 3</td>
-            </tr>
-            <tr>
-              <td>Dato 4</td>
-              <td>Dato 5</td>
-              <td>Dato 6</td>
-            </tr>
-          </table>
+          <Title msn={"Probabilidad de los datos"} className={"TituloProbabilidad"}></Title>
+          <NavbarEstadisticasProbabilidad></NavbarEstadisticasProbabilidad>
+          <Title msn={"Media de los datos"} className={"TituloProbabilidad"}></Title>
+          <NavbarEstadisticasMedia></NavbarEstadisticasMedia>
         </div>
       </div>
     </>

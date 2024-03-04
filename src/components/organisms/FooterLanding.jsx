@@ -11,9 +11,9 @@ function FooterLanding() {
                     <div className="wave" id="wave4"></div>
                  </div>
                 <ul className="social_icon">
-                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="https://www.facebook.com/carlos.gumeta.31/map"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="9711315960"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                    <li><a href="https://www.instagram.com/carloscst20/"><ion-icon name="logo-instagram"></ion-icon></a></li>
                 </ul>
                 <ul className="menu">
                     <li><a href="/">Inicio</a></li>
